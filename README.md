@@ -1,6 +1,8 @@
 Sunucunuzda MQTT broker'ınız bulunmalı, 1883 ve 1923 portlarında dinleme yapmalı. 1883, TCP bağlantıları için ve 1923, WebSocket bağlantıları için. Uygulamada WebSocket kullanıldı. ESP32 ise TCP üzerinden gönderim yapmaktadır.
 Uygulama kodlarında ip.js dosyasına sunucunuzun IP adresini giriniz! ESP32 kodunda da IP adresini girmeyi unutmayınız!
 
+`server.db` dosyası bir adet yol çalışması içermektedir, test için kullanabilirsiniz. Dilerseniz, bu dosyayı silerek programın kendi veritabanını oluşturmasını da sağlayabilirsiniz!
+
 Biz, sunucumuzda Mosquitto MQTT broker'ını tercih ettik. 
 Mosquitto configimiz:
 /etc/mosquitto/mosquitto.conf dosyası:
@@ -20,3 +22,4 @@ include_dir /etc/mosquitto/conf.d
 listener 1923
 protocol websockets
 ```
+
