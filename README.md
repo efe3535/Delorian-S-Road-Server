@@ -23,3 +23,5 @@ listener 1923
 protocol websockets
 ```
 
+Ek olarak Express JS üzerinde bir giriş sunucumuz çalışıyor. Bu sunucu 3366 portunu kullanmakta olup users.json dosyasında kullanıcıları depolar.
+`sroad_user_service` dizininde `npm install` çalıştırıp gerekli dosyaları indirdikten sonra `npm start` ile sunucunuzu başlatabilirsiniz.
